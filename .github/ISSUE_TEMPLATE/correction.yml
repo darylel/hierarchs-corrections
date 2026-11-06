@@ -1,0 +1,24 @@
+name: Correction
+description: Report an error or a gap in a hierarch's record
+title: "Correction: "
+body:
+  - type: input
+    id: record
+    attributes:
+      label: Hierarch's page
+      description: The address of his page on hierarchs.zosha.net (leave empty if he is missing from the site)
+      placeholder: https://hierarchs.zosha.net/h/0c916e49/
+  - type: textarea
+    id: correction
+    attributes:
+      label: What is wrong or missing
+      description: For example a date, a see, a consecrator, or two pages for the same person
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source
+      description: A link or a citation for the correction
+    validations:
+      required: true
